@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Welcome to Build Her | Client Onboarding</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Build<span>Her</span></a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero onboarding-hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">You're In</p>
+      <h1>Welcome to Build Her.</h1>
+      <p class="hero-sub">
+        This is your private onboarding page — sent to you personally after your
+        consultation. Complete the four steps below in order and your 6-week program
+        will begin as soon as everything's in.
+      </p>
+    </div>
+  </section>
+
+  <section class="section onboarding-steps">
+    <div class="container">
+      <div class="package-grid onboarding-grid">
+
+        <div class="package-card">
+          <p class="package-commitment">STEP 1</p>
+          <h3>Sign Your Agreement</h3>
+          <p>
+            Review and sign your coaching agreement — this locks in your package,
+            pricing, and payment plan.
+          </p>
+          <a href="#" class="btn btn-primary btn-full">
+            Sign Agreement (PandaDoc)
+          </a>
+          <p class="onboarding-note">[Replace this link with your PandaDoc signing link]</p>
+        </div>
+
+        <div class="package-card featured">
+          <p class="package-commitment">STEP 2</p>
+          <h3>Secure Your Spot</h3>
+          <p>
+            Once your agreement is signed, complete payment (in full or your chosen
+            weekly plan) to officially reserve your start date.
+          </p>
+          <a href="#" class="btn btn-primary btn-full">
+            Pay Now (Stripe)
+          </a>
+          <p class="onboarding-note">[Replace this link with your Stripe payment link]</p>
+        </div>
+
+        <div class="package-card">
+          <p class="package-commitment">STEP 3</p>
+          <h3>Complete Your Intake Form</h3>
+          <p>
+            Tell me about your goals, history, and what you need most — this is what I
+            use to build your personalized plan before session one.
+          </p>
+          <a href="#" class="btn btn-primary btn-full">
+            Start Intake Form (Google Forms)
+          </a>
+          <p class="onboarding-note">[Replace this link with your Google Form link]</p>
+        </div>
+
+        <div class="package-card vip">
+          <p class="package-commitment">STEP 4</p>
+          <h3>Book Your First Session</h3>
+          <p>
+            Grab your first coaching session on the calendar so we can kick off your
+            6 weeks together.
+          </p>
+          <a href="#" class="btn btn-primary btn-full">
+            Book First Session (Calendly)
+          </a>
+          <p class="onboarding-note">[Replace this link with your "First Session" Calendly event link]</p>
+        </div>
+
+      </div>
+
+      <p class="package-note">
+        Questions before you finish these steps? Just reply to my last message or text
+        me directly — I'm here.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="logo">Build<span>Her</span></p>
+    <p>&copy; <span id="year"></span> Build Her Coaching. You don't become her, you build her.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

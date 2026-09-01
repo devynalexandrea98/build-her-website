@@ -38,13 +38,12 @@ client to complete, in order:
 4. **Book Your First Session** → a Calendly link (ideally a separate "First Session"
    event type from your public consultation one)
 
-Steps 1, 3, and 4 currently have a placeholder link (`href="#"`) and an italic note
-underneath. Once you've created your PandaDoc template and Google Form, find those
-three `href="#"` attributes in `onboarding.html` and swap in your real links — then
-delete the `[bracketed]` note under each button. Deploy the page alongside
-`index.html` (same folder) so it lives at `yourdomain.com/onboarding.html`, and just
-send that link directly to each client after their consultation — no need to publicize
-it anywhere else.
+Step 3 is wired up to the real Google Form. Steps 1 and 4 still have a placeholder
+link (`href="#"`) and an italic note underneath — swap in your PandaDoc template link
+and a "First Session" Calendly link when ready, then delete the `[bracketed]` note
+under each. Deploy the page alongside `index.html` (same folder) so it lives at
+`yourdomain.com/onboarding.html`, and just send that link directly to each client
+after their consultation — no need to publicize it anywhere else.
 
 **If you set up Stripe later**, tell me and I'll add a "Pay by Card" option back into
 Step 2 alongside cash/Zelle/check.

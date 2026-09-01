@@ -30,20 +30,19 @@ to you first. Once someone says yes on the call, send them straight to `onboardi
 and blocked from search engines via `robots.txt`) with four steps for a newly-accepted
 client to complete, in order:
 
-1. **Sign Your Agreement** → your PandaDoc signing link
+1. **Sign Your Agreement** — text only, no link. PandaDoc templates aren't a single
+   reusable public link; each client needs their own personalized document. When a
+   client reaches this step, go into PandaDoc, click "Use Template" on your Build
+   Her Coaching Agreement, and send the generated document to their email directly.
 2. **Secure Your Spot** → currently cash, Zelle, or check (full or half payment;
    $50 discount for paying in full in cash) — you send payment details directly
    once the agreement is signed, and provide a receipt
-3. **Complete Your Intake Form** → your Google Form
-4. **Book Your First Session** → a Calendly link (ideally a separate "First Session"
-   event type from your public consultation one)
+3. **Complete Your Intake Form** → wired up to your real Google Form
+4. **Book Your First Session** → wired up to your real "First Session" Calendly link
 
-Step 3 is wired up to the real Google Form. Steps 1 and 4 still have a placeholder
-link (`href="#"`) and an italic note underneath — swap in your PandaDoc template link
-and a "First Session" Calendly link when ready, then delete the `[bracketed]` note
-under each. Deploy the page alongside `index.html` (same folder) so it lives at
-`yourdomain.com/onboarding.html`, and just send that link directly to each client
-after their consultation — no need to publicize it anywhere else.
+All four steps are fully set up. Deploy the page alongside `index.html` (same folder)
+so it lives at `yourdomain.com/onboarding.html`, and send that link directly to each
+client after their consultation — no need to publicize it anywhere else.
 
 **If you set up Stripe later**, tell me and I'll add a "Pay by Card" option back into
 Step 2 alongside cash/Zelle/check.

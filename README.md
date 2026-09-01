@@ -13,15 +13,15 @@ Packages → Book a Consultation (Calendly + inquiry form).
 
 ## Before you launch: 1 thing left to set up
 
-### 1. Your Calendly link (booking calendar) — done
-Wired up to `https://calendly.com/hitchedwiththeharneds/30min`.
+### Lifestyle Intensive travel radius
+In `index.html`, search for `[X]` in the "What's a Lifestyle Intensive?" callout (near
+the Packages section) and replace it with your actual local travel radius in miles.
 
-### 2. Your inquiry form (Formspree) — done
-Wired up to `https://formspree.io/f/xnpqppzr`. Formspree will email you a
-confirmation link the first time someone submits the form — click it to activate.
-
-### 3. Personal details — done
-Name, story, headshot (`images/devyn-headshot.jpg`), and package pricing are all filled in.
+### Everything else — done
+- Calendly, wired up to `https://calendly.com/hitchedwiththeharneds/30min`
+- Formspree inquiry form, wired up to `https://formspree.io/f/xnpqppzr` (it'll email
+  you a confirmation link the first time someone submits the form — click it to activate)
+- Name, story, headshot (`images/devyn-headshot.jpg`), and package pricing
 
 ## Running it locally
 

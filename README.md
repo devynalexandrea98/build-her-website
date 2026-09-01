@@ -11,14 +11,10 @@ Packages → Book a Consultation (Calendly + inquiry form).
 - `styles.css` — all styling
 - `script.js` — mobile nav toggle + inquiry form submission
 
-## Before you launch: 3 things to set up
+## Before you launch: 2 things left to set up
 
-### 1. Your Calendly link (booking calendar)
-1. Create a free account at [calendly.com](https://calendly.com) and set up your
-   "consultation call" event type.
-2. In `index.html`, find `YOUR-CALENDLY-LINK` (appears twice, in the "Book a Free
-   Consultation" section) and replace it with your real link, e.g.
-   `https://calendly.com/yourname/consultation`.
+### 1. Your Calendly link (booking calendar) — done
+Wired up to `https://calendly.com/hitchedwiththeharneds/30min`.
 
 ### 2. Your inquiry form (Formspree)
 1. Create a free account at [formspree.io](https://formspree.io) and create a new form.

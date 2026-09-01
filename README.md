@@ -31,18 +31,23 @@ and blocked from search engines via `robots.txt`) with four steps for a newly-ac
 client to complete, in order:
 
 1. **Sign Your Agreement** → your PandaDoc signing link
-2. **Secure Your Spot** → your Stripe payment link
+2. **Secure Your Spot** → currently cash, Zelle, or check (full or half payment;
+   $50 discount for paying in full in cash) — you send payment details directly
+   once the agreement is signed, and provide a receipt
 3. **Complete Your Intake Form** → your Google Form
 4. **Book Your First Session** → a Calendly link (ideally a separate "First Session"
    event type from your public consultation one)
 
-Each step currently has a placeholder link (`href="#"`) and an italic note underneath
-it. Once you've created your Stripe payment link, PandaDoc template, and Google Form,
-find those four `href="#"` attributes in `onboarding.html` and swap in your real links
-— then delete the `[bracketed]` note under each button. Deploy the page alongside
+Steps 1, 3, and 4 currently have a placeholder link (`href="#"`) and an italic note
+underneath. Once you've created your PandaDoc template and Google Form, find those
+three `href="#"` attributes in `onboarding.html` and swap in your real links — then
+delete the `[bracketed]` note under each button. Deploy the page alongside
 `index.html` (same folder) so it lives at `yourdomain.com/onboarding.html`, and just
 send that link directly to each client after their consultation — no need to publicize
 it anywhere else.
+
+**If you set up Stripe later**, tell me and I'll add a "Pay by Card" option back into
+Step 2 alongside cash/Zelle/check.
 
 ## Running it locally
 

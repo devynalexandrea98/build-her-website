@@ -243,6 +243,14 @@ img { max-width: 100%; display: block; }
 
 .about-text h2 { text-align: left; }
 
+.about-title {
+  color: var(--color-terracotta-dark);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.9rem;
+}
+
 /* Packages */
 .package-grid {
   display: grid;

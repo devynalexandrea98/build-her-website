@@ -21,10 +21,9 @@ Wired up to `https://formspree.io/f/xnpqppzr`. Formspree will email you a
 confirmation link the first time someone submits the form — click it to activate.
 
 ### 3. Personal details
-Search `index.html` for text in `[brackets]` and replace with your own info:
-- `[Your Name]` and your personal story in the **About Me** section
-- Photo: swap the "Your Photo Here" placeholder `<div>` for an `<img>` tag once you
-  have a headshot
+Name and story are filled in. Two things still left:
+- Photo: swap the "Devyn's Photo Here" placeholder `<div>` (in `index.html`, About Me
+  section) for an `<img>` tag once you pick a headshot
 - Pricing in the **Packages** section note
 
 ## Running it locally

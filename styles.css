@@ -348,6 +348,12 @@ img { max-width: 100%; display: block; }
 .package-card.vip .price-sub { color: #cfc3bb; }
 .package-card.vip ul { color: #e7ddd4; }
 
+.intensive-highlight {
+  font-weight: 800;
+  font-size: 1.05em;
+  color: var(--color-terracotta) !important;
+}
+
 .package-card ul {
   padding-left: 20px;
   color: var(--color-muted);

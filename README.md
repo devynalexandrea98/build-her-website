@@ -11,16 +11,14 @@ Packages → Book a Consultation (Calendly + inquiry form).
 - `styles.css` — all styling
 - `script.js` — mobile nav toggle + inquiry form submission
 
-## Before you launch: 2 things left to set up
+## Before you launch: 1 thing left to set up
 
 ### 1. Your Calendly link (booking calendar) — done
 Wired up to `https://calendly.com/hitchedwiththeharneds/30min`.
 
-### 2. Your inquiry form (Formspree)
-1. Create a free account at [formspree.io](https://formspree.io) and create a new form.
-2. Copy the form endpoint it gives you (looks like `https://formspree.io/f/xxxxxxxx`).
-3. In `index.html`, find `YOUR-FORM-ID` in the `<form action="...">` line and replace
-   the whole URL with your endpoint.
+### 2. Your inquiry form (Formspree) — done
+Wired up to `https://formspree.io/f/xnpqppzr`. Formspree will email you a
+confirmation link the first time someone submits the form — click it to activate.
 
 ### 3. Personal details
 Search `index.html` for text in `[brackets]` and replace with your own info:

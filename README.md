@@ -20,11 +20,8 @@ Wired up to `https://calendly.com/hitchedwiththeharneds/30min`.
 Wired up to `https://formspree.io/f/xnpqppzr`. Formspree will email you a
 confirmation link the first time someone submits the form — click it to activate.
 
-### 3. Personal details
-Name and story are filled in. Two things still left:
-- Photo: swap the "Devyn's Photo Here" placeholder `<div>` (in `index.html`, About Me
-  section) for an `<img>` tag once you pick a headshot
-- Pricing in the **Packages** section note
+### 3. Personal details — done
+Name, story, headshot (`images/devyn-headshot.jpg`), and package pricing are all filled in.
 
 ## Running it locally
 

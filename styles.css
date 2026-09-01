@@ -227,18 +227,12 @@ img { max-width: 100%; display: block; }
   align-items: center;
 }
 
-.photo-placeholder {
+.about-photo img {
+  width: 100%;
   aspect-ratio: 4 / 5;
-  background: var(--color-white);
-  border: 2px dashed var(--color-terracotta);
+  object-fit: cover;
   border-radius: var(--radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-muted);
-  font-weight: 600;
-  text-align: center;
-  padding: 20px;
+  box-shadow: 0 6px 24px rgba(36, 28, 26, 0.12);
 }
 
 .about-text h2 { text-align: left; }
@@ -271,6 +265,12 @@ img { max-width: 100%; display: block; }
   border-color: var(--color-terracotta);
 }
 
+.package-card.vip {
+  border-color: var(--color-ink);
+  background: var(--color-ink);
+  color: var(--color-cream);
+}
+
 .package-tag {
   position: absolute;
   top: -14px;
@@ -285,11 +285,50 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.05em;
 }
 
+.package-tag-vip {
+  background: var(--color-cream);
+  color: var(--color-ink);
+}
+
+.package-tagline {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
 .package-focus {
   color: var(--color-terracotta-dark);
   font-weight: 700;
   margin-bottom: 16px;
 }
+
+.package-card.vip .package-focus { color: var(--color-terracotta); }
+
+.package-price {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(111, 99, 96, 0.2);
+}
+
+.package-card.vip .package-price { border-bottom-color: rgba(250, 245, 239, 0.2); }
+
+.price-main {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.price-sub {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-top: 4px;
+}
+
+.package-card.vip .price-sub { color: #cfc3bb; }
+.package-card.vip ul { color: #e7ddd4; }
 
 .package-card ul {
   padding-left: 20px;

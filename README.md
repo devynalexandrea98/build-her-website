@@ -11,12 +11,14 @@ Packages → Book a Consultation (Calendly + inquiry form).
 - `buildhim.html` — public marketing page for Build Him: Private Reset (men's coaching),
   linked from index.html's nav. Same design system, navy accent instead of rose.
   Pricing is intentionally not shown — it routes to a free consultation instead.
-- `onboarding.html` — private client onboarding page (see below)
+- `onboarding.html` — private client onboarding page for Build Her clients (see below)
+- `buildhim-onboarding.html` — same idea, for Build Him clients
 - `privacy-policy.html` — public privacy policy, linked in every page's footer
-- `styles.css` — all shared styling (both index.html and buildhim.html use this;
-  buildhim.html overrides the accent color tokens in its own `<style>` block)
+- `styles.css` — all shared styling (index.html, buildhim.html, and both onboarding
+  pages use this; the Build Him pages override the accent color tokens in their own
+  `<style>` block)
 - `script.js` — mobile nav toggle + inquiry form submission
-- `robots.txt` — keeps `onboarding.html` out of search engines
+- `robots.txt` — keeps both onboarding pages out of search engines
 
 ## Launch checklist — all done
 - Calendly, wired up to `https://calendly.com/buildhermethod/30min` (consultation) and
@@ -55,8 +57,22 @@ All four steps are fully set up. Deploy the page alongside `index.html` (same fo
 so it lives at `yourdomain.com/onboarding.html`, and send that link directly to each
 client after their consultation — no need to publicize it anywhere else.
 
+**`buildhim-onboarding.html`** works exactly the same way, for Build Him clients — same
+four steps, but Step 3 (Google Form) and Step 4 (Calendly) still need real links:
+
+1. Create a Build Him-specific Google Form (goals, routines, mobility, meal habits,
+   scheduling — different questions than the Build Her intake) and swap its link into
+   Step 3's `href="#"`.
+2. Create a dedicated Calendly event for the first in-person Build Him session (up to
+   2 hours, in-person location) and swap its link into Step 4's `href="#"`. Send both
+   links here whenever you're ready and they'll get wired in.
+3. You'll also need a Build Him Coaching Agreement PandaDoc template (Step 1 works the
+   same way as Build Her's — no public link, you generate and send each client's copy
+   individually) — just say the word and I'll draft that contract text too, including
+   the reschedule/MIA policy from your Build Him proposal.
+
 **If you set up Stripe later**, tell me and I'll add a "Pay by Card" option back into
-Step 2 alongside cash/Zelle/check.
+Step 2 of both onboarding pages, alongside cash/Zelle/check.
 
 ## Running it locally
 

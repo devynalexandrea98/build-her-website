@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Build Him | Private Reset Coaching</title>
+<meta name="description" content="Build Him: Private Reset is an 8-week personalized accountability and lifestyle coaching program for men, from the team behind Build Her Method.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* Build Him uses its own navy accent, everything else inherits the shared design system */
+  :root {
+    --color-accent: #2C4A6E;
+    --color-accent-dark: #1B324D;
+  }
+
+  .checklist-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 32px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .checklist-grid li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.96rem;
+    color: var(--color-ink);
+  }
+  .checklist-grid li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") center/60% no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") center/60% no-repeat;
+  }
+
+  .pull-quote {
+    background: var(--color-ink);
+    color: var(--color-cream);
+    border-radius: var(--radius);
+    padding: 32px 36px;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .pull-quote p {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0 0 10px;
+  }
+  .pull-quote cite {
+    font-style: normal;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    font-weight: 700;
+  }
+
+  .expect-list {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+  }
+  .expect-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--color-cream-alt);
+    font-size: 1rem;
+  }
+  .expect-list li:last-child { border-bottom: none; }
+  .expect-list li::before {
+    content: "✓";
+    color: var(--color-accent);
+    font-weight: 800;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 720px) {
+    .checklist-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="buildhim.html" class="logo">Build<span>Him</span></a>
+    <nav class="main-nav" id="main-nav">
+      <a href="#overview">Program</a>
+      <a href="#included">What's Included</a>
+      <a href="#expect">Results</a>
+      <a href="#booking">Book a Call</a>
+      <a href="index.html">Women's Coaching →</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">Accountability. Strength. Consistency. Results.</p>
+      <h1>Build Him: Private Reset</h1>
+      <p class="hero-sub">
+        A fully customized 8-week accountability and lifestyle coaching program for men —
+        built around your real schedule, your real habits, and the routines that will
+        actually stick. This isn't a workout plan. It's a system, with someone in your
+        corner every step of the way.
+      </p>
+      <div class="hero-cta">
+        <a href="#booking" class="btn btn-primary">Book a Free Consultation</a>
+        <a href="#included" class="btn btn-ghost">See What's Included</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PULL QUOTE -->
+  <section class="section" style="padding-top:0; padding-bottom:0;">
+    <div class="container">
+      <div class="pull-quote">
+        <p>"This isn't just more time — this is a system built around you so you can
+          finally create the routines, habits, and results that last."</p>
+        <cite>— Devyn, Build Him Coach</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAM OVERVIEW -->
+  <section id="overview" class="section pillars">
+    <div class="container">
+      <h2>Program Overview</h2>
+      <p class="section-lede">
+        8 weeks of structure, support, and accountability — with me in your corner every
+        step of the way.
+      </p>
+      <div class="pillar-grid">
+        <div class="pillar-card">
+          <span class="pillar-icon">8</span>
+          <h3>Weeks Total</h3>
+          <p>A fully customized 8-week program, built around your goals and your schedule.</p>
+        </div>
+        <div class="pillar-card">
+          <span class="pillar-icon">3</span>
+          <h3>Sessions Per Week</h3>
+          <p>Private in-person sessions, up to 2 hours each — 32 in-person hours total.</p>
+        </div>
+        <div class="pillar-card">
+          <span class="pillar-icon">5</span>
+          <h3>Weekday Text &amp; Voice Access</h3>
+          <p>Direct messaging access Monday–Friday, plus accountability calls when needed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT'S INCLUDED -->
+  <section id="included" class="section" style="background:var(--color-white);">
+    <div class="container">
+      <h2>What's Included</h2>
+      <p class="section-lede">
+        Every Build Him program is fully customized, but here's what's built into the
+        structure from day one.
+      </p>
+      <ul class="checklist-grid">
+        <li>3 private in-person sessions per week (up to 2 hours each)</li>
+        <li>Monday–Friday text &amp; voice note access</li>
+        <li>Accountability calls when needed</li>
+        <li>Weekly planning &amp; reset session</li>
+        <li>Personalized daily routine development</li>
+        <li>Walking &amp; stretching accountability</li>
+        <li>Custom meal plans &amp; grocery organization</li>
+        <li>Grocery trips together</li>
+        <li>Meal-prep organization &amp; healthier choice accountability</li>
+        <li>Home organization &amp; routine reset support</li>
+        <li>Appointment, task &amp; calendar organization</li>
+        <li>Weekly goals &amp; personalized action plans</li>
+        <li>Habit tracking &amp; consistency accountability</li>
+        <li>Motivation &amp; follow-through support</li>
+        <li>Personalized Build Him journal/binder</li>
+        <li>Weekly progress recap</li>
+        <li>End-of-program review &amp; next-step plan</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- WHAT YOU CAN EXPECT -->
+  <section id="expect" class="section pillars">
+    <div class="container">
+      <h2>What You Can Expect</h2>
+      <ul class="expect-list">
+        <li>Stronger, more consistent daily routines</li>
+        <li>Improved mobility, flexibility &amp; walking</li>
+        <li>Better sleep &amp; more daily energy</li>
+        <li>Healthier eating habits that fit your life</li>
+        <li>Clear goals, structure &amp; accountability</li>
+        <li>Progress you can see, feel, and maintain</li>
+      </ul>
+      <p style="text-align:center; margin-top:28px; font-family:var(--font-heading); font-style:italic; color:var(--color-muted); font-size:1.1rem;">
+        This is about building the best version of you — for the long run.
+      </p>
+    </div>
+  </section>
+
+  <!-- VALUE -->
+  <section class="section" style="background:var(--color-white);">
+    <div class="container" style="max-width:760px;">
+      <h2>The Value</h2>
+      <p style="text-align:center; color:var(--color-muted); font-size:1.05rem;">
+        When you add up 32 hours of in-person coaching plus everything that happens
+        outside of our sessions — planning, check-ins, meal-prep organization,
+        appointment and routine support — this program is built to deliver far more
+        than time on a calendar. It's built to deliver real, lasting results.
+      </p>
+    </div>
+  </section>
+
+  <!-- INVESTMENT -->
+  <section class="section pillars">
+    <div class="container" style="max-width:640px; text-align:center;">
+      <h2>Your Investment</h2>
+      <p class="section-lede">
+        Every Build Him program is fully customized to your goals, your schedule, and
+        what you need most — so pricing is discussed on your free consultation call,
+        not posted as a one-size-fits-all number.
+      </p>
+      <a href="#booking" class="btn btn-primary">Book a Free Consultation</a>
+    </div>
+  </section>
+
+  <!-- POLICY NOTE -->
+  <section class="section" style="padding-top:0;">
+    <div class="container" style="max-width:760px;">
+      <div class="package-note" style="font-style:normal; text-align:left; background:var(--color-cream-alt); border-radius:var(--radius); padding:24px;">
+        <strong style="color:var(--color-ink); display:block; margin-bottom:8px;">Rescheduling &amp; commitment policy</strong>
+        Sessions can be rescheduled with at least 24 hours' notice. If a client goes
+        unreachable mid-program, they're given one chance to rejoin and get back on
+        track, while remaining responsible for the balance due — the same applies if
+        they choose not to return within a two-week window.
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="booking" class="section booking">
+    <div class="container booking-inner">
+
+      <div class="booking-col">
+        <h2>Book a Free Consultation</h2>
+        <p>
+          Let's talk about where you are, what you're working toward, and whether Build
+          Him: Private Reset is the right fit. No pressure — just an honest conversation.
+        </p>
+
+        <div class="calendly-inline-widget"
+             data-url="https://calendly.com/buildhermethod/30min?hide_event_type_details=1&hide_gdpr_banner=1"
+             style="min-width:280px; height:650px;">
+        </div>
+        <p class="calendly-fallback">
+          Booking calendar not loading?
+          <a href="https://calendly.com/buildhermethod/30min" target="_blank" rel="noopener">
+            Click here to schedule directly on Calendly
+          </a>.
+        </p>
+      </div>
+
+      <div class="booking-col">
+        <h2>Or Send an Inquiry</h2>
+        <p>Prefer to reach out first? Fill this out and I'll get back to you within 1-2 business days.</p>
+
+        <form id="inquiry-form" class="inquiry-form" action="https://formspree.io/f/xnpqppzr" method="POST">
+          <input type="hidden" name="program" value="Build Him: Private Reset">
+
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone (optional)</label>
+          <input type="tel" id="phone" name="phone">
+
+          <label for="message">Tell me a bit about your goals</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+
+          <button type="submit" class="btn btn-primary btn-full">Send Inquiry</button>
+          <p id="form-status" class="form-status" role="status"></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="logo">Build<span>Him</span></p>
+    <p>&copy; <span id="year"></span> Build Him Coaching, a Build Her Method program.</p>
+    <p><a href="privacy-policy.html" style="color:#cfc3bb;">Privacy Policy</a></p>
+  </div>
+</footer>
+
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<script src="script.js"></script>
+</body>
+</html>

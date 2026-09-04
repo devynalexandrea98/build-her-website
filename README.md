@@ -1,24 +1,35 @@
 # Build Her — Coaching Website
 
-A simple, static one-page website for the Build Her coaching brand.
+A simple, static website for the Build Her coaching brand.
 
 **Sections:** Home / What I Do → Three Pillars (Body, Mind, Income) → About Me →
 Packages → Book a Consultation (Calendly + inquiry form).
 
 ## Files
 
-- `index.html` — the public marketing site
+- `index.html` — the public marketing site (women's coaching)
+- `buildhim.html` — public marketing page for Build Him: Private Reset (men's coaching),
+  linked from index.html's nav. Same design system, navy accent instead of rose.
+  Pricing is intentionally not shown — it routes to a free consultation instead.
 - `onboarding.html` — private client onboarding page (see below)
-- `styles.css` — all styling
+- `privacy-policy.html` — public privacy policy, linked in every page's footer
+- `styles.css` — all shared styling (both index.html and buildhim.html use this;
+  buildhim.html overrides the accent color tokens in its own `<style>` block)
 - `script.js` — mobile nav toggle + inquiry form submission
 - `robots.txt` — keeps `onboarding.html` out of search engines
 
 ## Launch checklist — all done
-- Calendly, wired up to `https://calendly.com/hitchedwiththeharneds/30min`
+- Calendly, wired up to `https://calendly.com/buildhermethod/30min` (consultation) and
+  `https://calendly.com/buildhermethod/first-coaching-session` (first session, used on
+  the onboarding page)
 - Formspree inquiry form, wired up to `https://formspree.io/f/xnpqppzr` (it'll email
   you a confirmation link the first time someone submits the form — click it to activate)
 - Name, story, headshot (`images/devyn-headshot.jpg`), package pricing, and Lifestyle
   Intensive travel radius (15 miles)
+
+**Heads up:** if you ever rename an event or change your Calendly username again, every
+link across `index.html`, `buildhim.html`, and `onboarding.html` that points to Calendly
+will need updating too — just let me know and I'll fix them all at once.
 
 ## Client flow: how the pieces fit together
 

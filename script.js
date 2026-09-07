@@ -34,6 +34,13 @@ form.addEventListener('submit', async (e) => {
       form.reset();
       status.textContent = "Thanks! Your inquiry has been sent — I'll be in touch soon.";
       status.className = 'form-status success';
+      if (window.goatcounter && window.goatcounter.count) {
+        window.goatcounter.count({
+          path: 'inquiry-form-submitted',
+          title: 'Inquiry form submitted',
+          event: true,
+        });
+      }
     } else {
       throw new Error('Form submission failed');
     }

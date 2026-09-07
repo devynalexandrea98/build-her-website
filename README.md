@@ -20,6 +20,21 @@ Packages → Book a Consultation (Calendly + inquiry form).
 - `script.js` — mobile nav toggle + inquiry form submission
 - `robots.txt` — keeps both onboarding pages out of search engines
 
+## Analytics
+
+Every page loads a [GoatCounter](https://www.goatcounter.com) tracking snippet
+(dashboard: `buildhermethod.goatcounter.com`) — free, lightweight, no cookie banner
+needed. It tracks page views automatically, plus click events on the links that
+matter most:
+
+- `calendly-consult-fallback(-buildhim)` — the "schedule directly on Calendly" link
+- `intake-form-buildher` / `intake-form-buildhim` — the Google Form intake link
+- `first-session-buildher` / `first-session-buildhim` — the "book first session" Calendly link
+- `inquiry-form-submitted` — fires when someone successfully submits the inquiry form
+
+Log into your GoatCounter dashboard any time to see visits and these click counts —
+events show up in the "Pages" list marked separately from regular page views.
+
 ## Launch checklist — all done
 - Calendly, wired up to `https://calendly.com/buildhermethod/30min` (consultation) and
   `https://calendly.com/buildhermethod/first-coaching-session` (first session, used on

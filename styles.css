@@ -827,3 +827,31 @@ h2::after {
   margin-bottom: 22px;
 }
 @media (max-width: 900px) { .channel-callout .btn { width: 100%; } }
+
+/* Start Free band */
+.start-free {
+  background: var(--color-cream);
+  border-bottom: 1px solid #ead9d6;
+  padding: 44px 0;
+}
+.start-free-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+.start-free .shop-label { color: var(--color-accent-dark); margin-bottom: 8px; display: block; }
+.start-free-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+.start-free-title em { color: var(--color-accent-dark); }
+.start-free-sub { color: var(--color-muted); margin: 0; }
+.start-free-actions { display: flex; gap: 12px; flex-shrink: 0; }
+@media (max-width: 900px) {
+  .start-free-inner { flex-direction: column; text-align: center; gap: 22px; }
+  .start-free-actions { flex-direction: column; width: 100%; }
+  .start-free-actions .btn { width: 100%; text-align: center; }
+}

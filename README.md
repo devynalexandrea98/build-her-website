@@ -36,7 +36,7 @@ Log into your GoatCounter dashboard any time to see visits and these click count
 events show up in the "Pages" list marked separately from regular page views.
 
 ## Launch checklist — all done
-- Calendly, wired up to `https://calendly.com/buildhermethod/30min` (consultation) and
+- Calendly, wired up to `https://calendly.com/buildhermethod/new-meeting` (consultation) and
   `https://calendly.com/buildhermethod/first-coaching-session` (first session, used on
   the onboarding page)
 - Formspree inquiry form, wired up to `https://formspree.io/f/xnpqppzr` (it'll email

@@ -28,6 +28,7 @@
       <a href="#shop">Peptides</a>
       <a href="#partner">Get Paid With Me</a>
       <a href="#coaching">Coaching</a>
+      <a href="#community">Community</a>
       <a href="#booking">Book a Call</a>
     </nav>
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -55,6 +56,22 @@
       <div class="hero-cta">
         <a href="#booking" class="btn btn-primary">Book a Free Glow-Up Call</a>
         <a href="#shop" class="btn btn-ghost">Shop Peptides</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- START FREE -->
+  <section class="start-free">
+    <div class="container start-free-inner">
+      <div class="start-free-text">
+        <p class="shop-label">Start Free</p>
+        <p class="start-free-title">Not ready for coaching? <em>Join the <span style="white-space:nowrap">Glow-Up</span> Society.</em></p>
+        <p class="start-free-sub">Free daily quotes, real talk, and first access to events &amp; merch.</p>
+      </div>
+      <div class="start-free-actions">
+        <a href="https://www.instagram.com/channel/5jurv5lKrIqJGgF2/" class="btn btn-primary" target="_blank" rel="noopener"
+           data-goatcounter-click="ig-glowup-society-channel-top">Join the Channel</a>
+        <a href="#community" class="btn btn-ghost">Get Email Updates</a>
       </div>
     </div>
   </section>
@@ -283,16 +300,55 @@
   </section>
 
   <!-- COMMUNITY -->
-  <section class="section community">
+  <section id="community" class="section community">
     <div class="container">
-      <p class="eyebrow">The Community</p>
+      <p class="eyebrow">The Glow-Up Society</p>
       <p class="community-quote">Where hot messes glow up&nbsp;together.</p>
-      <p class="section-lede" style="margin-bottom:0;">
-        Follow along for real talk on weight loss, sobriety, mindset, and building income —
-        and come glow up with us, babe.
+      <p class="section-lede">
+        More than coaching — a community of women rebuilding their body, mind, and income,
+        side by side. Join free to get first access to events, merch drops, and free glow-up
+        support straight to your inbox.
       </p>
+
+      <div class="society-grid">
+        <div class="society-card">
+          <span class="shop-label">Events</span>
+          <h3>Gatherings, IRL</h3>
+          <p>Brunches, workshops, and glow-up nights with women on the same path. Coming soon — members get the first invite.</p>
+        </div>
+        <div class="society-card">
+          <span class="shop-label">Merch</span>
+          <h3>Wear the Era</h3>
+          <p><em>Healed is hot. Paid is hotter.</em> The first collection is dropping soon — members shop first.</p>
+        </div>
+        <div class="society-card">
+          <span class="shop-label">Free Support</span>
+          <h3>Glow Up, On Us</h3>
+          <p>Not ready for 1:1 coaching? You still deserve support. Free tips, resources, and encouragement for every woman in the Society.</p>
+        </div>
+      </div>
+
+      <form id="society-form" class="society-form js-form" action="https://formspree.io/f/xnpqppzr" method="POST"
+            data-success="You're in, babe. Welcome to the Glow-Up Society. 💋"
+            data-event="society-signup">
+        <input type="hidden" name="_subject" value="New Glow-Up Society member">
+        <input type="hidden" name="interest" value="Glow-Up Society signup">
+        <label class="sr-only" for="society-name">First name</label>
+        <input type="text" id="society-name" name="name" placeholder="First name" required>
+        <label class="sr-only" for="society-email">Email</label>
+        <input type="email" id="society-email" name="email" placeholder="Email" required>
+        <button type="submit" class="btn btn-primary">Join the Society</button>
+        <p class="form-status" role="status"></p>
+      </form>
+
+      <div class="channel-callout">
+        <p class="channel-text">Want in on the daily glow-up? Join our Instagram channel for quotes, real talk, event drops, and first dibs on merch.</p>
+        <a href="https://www.instagram.com/channel/5jurv5lKrIqJGgF2/" class="btn btn-primary" target="_blank" rel="noopener"
+           data-goatcounter-click="ig-glowup-society-channel">Join the Glow-Up Society Channel</a>
+      </div>
+
       <div class="social-row">
-        <a href="https://www.instagram.com/hothealedhighlypaid/" class="btn btn-primary" target="_blank" rel="noopener"
+        <a href="https://www.instagram.com/hothealedhighlypaid/" class="btn btn-ghost" target="_blank" rel="noopener"
            data-goatcounter-click="ig-community">@hothealedhighlypaid</a>
         <a href="https://www.instagram.com/realhousewifeofmb/" class="btn btn-ghost" target="_blank" rel="noopener"
            data-goatcounter-click="ig-devyn">Follow Devyn</a>
@@ -330,7 +386,7 @@
         <h2>Or Send Me a Message</h2>
         <p>Prefer to reach out first? Fill this out and I'll get back to you within 1–2 business days.</p>
 
-        <form id="inquiry-form" class="inquiry-form" action="https://formspree.io/f/xnpqppzr" method="POST">
+        <form id="inquiry-form" class="inquiry-form js-form" action="https://formspree.io/f/xnpqppzr" method="POST">
           <input type="hidden" name="_subject" value="New inquiry — Hot, Healed & Highly Paid">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required>
@@ -353,7 +409,7 @@
           <textarea id="message" name="message" rows="4"></textarea>
 
           <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-          <p id="form-status" class="form-status" role="status"></p>
+          <p class="form-status" role="status"></p>
         </form>
       </div>
 

@@ -15,37 +15,34 @@ mainNav.querySelectorAll('a').forEach((link) => {
   });
 });
 
-const form = document.getElementById('inquiry-form');
-const status = document.getElementById('form-status');
+document.querySelectorAll('form.js-form').forEach((form) => {
+  const status = form.querySelector('.form-status');
+  const successText = form.dataset.success ||
+    "Thanks! Your inquiry has been sent — I'll be in touch soon.";
+  const eventName = form.dataset.event || 'inquiry-form-submitted';
 
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  status.textContent = 'Sending...';
-  status.className = 'form-status';
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    status.textContent = 'Sending...';
+    status.className = 'form-status';
 
-  try {
-    const response = await fetch(form.action, {
-      method: 'POST',
-      body: new FormData(form),
-      headers: { Accept: 'application/json' },
-    });
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' },
+      });
+      if (!response.ok) throw new Error('Form submission failed');
 
-    if (response.ok) {
       form.reset();
-      status.textContent = "Thanks! Your inquiry has been sent — I'll be in touch soon.";
+      status.textContent = successText;
       status.className = 'form-status success';
       if (window.goatcounter && window.goatcounter.count) {
-        window.goatcounter.count({
-          path: 'inquiry-form-submitted',
-          title: 'Inquiry form submitted',
-          event: true,
-        });
+        window.goatcounter.count({ path: eventName, title: eventName, event: true });
       }
-    } else {
-      throw new Error('Form submission failed');
+    } catch (err) {
+      status.textContent = 'Something went wrong. Please try again.';
+      status.className = 'form-status error';
     }
-  } catch (err) {
-    status.textContent = 'Something went wrong. Please try again or email me directly.';
-    status.className = 'form-status error';
-  }
+  });
 });

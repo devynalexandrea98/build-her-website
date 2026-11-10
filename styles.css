@@ -813,3 +813,17 @@ h2::after {
   .society-grid { grid-template-columns: 1fr; }
   .society-form .btn { width: 100%; }
 }
+.channel-callout {
+  max-width: 760px;
+  margin: 40px auto 0;
+  padding: 36px 28px;
+  border-top: 1px solid #e0cbc8;
+  border-bottom: 1px solid #e0cbc8;
+}
+.channel-text {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.25rem;
+  margin-bottom: 22px;
+}
+@media (max-width: 900px) { .channel-callout .btn { width: 100%; } }
